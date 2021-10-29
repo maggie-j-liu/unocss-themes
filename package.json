@@ -1,7 +1,13 @@
 {
   "name": "unocss-themes",
   "version": "1.0.0",
-  "description": "",
+  "description": "An unocss variant generator that generates variants for multiple color themes.",
+  "homepage": "https://github.com/maggie-j-liu/unocss-themes",
+  "bugs": "https://github.com/maggie-j-liu/unocss-themes/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maggie-j-liu/unocss-themes"
+  },
   "main": "index.js",
   "files": [
     "index.js"
