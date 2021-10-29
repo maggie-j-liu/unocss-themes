@@ -1,5 +1,7 @@
 # unocss-themes
 
+![unocss-themes image](/image.png)
+
 This is an unocss variant generator that generates variants for multiple color themes. It's similar to the [tailwind-themes](https://github.com/maggie-j-liu/tailwind-themes) plugin, but for [unocss](https://github.com/antfu/unocss). 
 
 To use it, install the package:
