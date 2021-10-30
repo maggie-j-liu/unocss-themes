@@ -1,13 +1,13 @@
 module.exports = function ({ themes }) {
-  const themeVariants = Object.keys(themes);
-  const variants = themeVariants.map((theme) => (matcher) => {
-    if (!matcher.startsWith(theme + ":") && !matcher.startsWith(theme + "-")) {
+  return (matcher) => {
+    const regex = /^(.+?)[:-](.+)$/
+    const matches = matcher.match(regex);
+    if (!matches || !themes[matches[1]]) {
       return matcher;
     }
     return {
-      matcher: matcher.slice(theme.length + 1),
-      selector: (s) => `${themes[theme]} ${s}`,
-    };
-  });
-  return variants;
+      matcher: matches[2],
+      selector: (s) => `${themes[matches[1]]} ${s}`
+    }
+  }
 };
